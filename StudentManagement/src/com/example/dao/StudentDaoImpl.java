@@ -7,8 +7,8 @@ public class StudentDaoImpl implements StudentDao {
 		Connection con = null;
 		try {
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-			String url = "jdbc:mysql://192.168.10.127:3306/dac78";
-			con = DriverManager.getConnection(url, "dac78", "welcome");
+			String url = "jdbc:mysql://url:3306/db_name";
+			con = DriverManager.getConnection(url, "username", "password");
 			if(con!=null) {
 				return con;
 			}
